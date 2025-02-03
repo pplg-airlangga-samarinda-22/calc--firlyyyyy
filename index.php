@@ -44,14 +44,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     <h2>Kalkulator Sederhana</h2>
     <form action="" method="post">
-        <input type="number" name="num1" placeholder="Masukkan angka pertama" required>
+        <input type="text" name="num1" placeholder="Masukkan angka pertama" required>
         <select name="operation">
             <option value="add">+</option>
             <option value="subtract">-</option>
             <option value="multipy">*</option>
             <option value="divide">/</option>
         </select>
-        <input type="number" name="num2" placeholder="Masukkan angka kedua" required>
+        <input type="text" name="num2" placeholder="Masukkan angka kedua" required>
         <button type="submit">Hitung</button>
     </form>
     <h3>Hasil: <?php echo $result; ?></h3>
